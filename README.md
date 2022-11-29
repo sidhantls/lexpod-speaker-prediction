@@ -1,18 +1,23 @@
 # Lexcap Speaker Prediction
-Prediction of which speaker is speaking in each audio clip of captions using OpenAI Whisper. This is motivated by Andrej Karpathy's (work)[https://karpathy.ai/lexicap/] on using Whisper to transcribe all Lex Freidman podcasts. In this repo we explore using inner hidden states of Whisper to see if its useful for speaker prediction
+Speaker prediction on Lex Fridman Podcast captions using OpenAI Whisper. This repository explores using the inner hidden states of the Whisper encoder to see if its useful for speaker prediction. This is motivated by Andrej Karpathy's (work)[https://karpathy.ai/lexicap/] on using Whisper to transcribe Lex Fridman podcasts.
+
+Resources:  
+* (Blog Post)[https://sidhantls.github.io/lex-speaker-prediction]  
+* [Colab](https://colab.research.google.com/drive/13U6OLMHUo3mo8RhKAvTcVEbroAsQsEx3?usp=sharing) for training the classifier
 
 ![approach](approach.png)
 
+
 ## Setup
 ### Requirements 
-* Install all python requirements on Whisper - https://github.com/openai/whisper
-* (yt-dlp)[https://github.com/yt-dlp/yt-dlp] command line tool to download audio files from podcast
-* Clone this Whisper (fork)[https://github.com/sidhantls/whisper] into the root of the repository. It only contains a few line changes that save intermediate hidden states of the encoder. These hidden states will be use as features for speaker prediction. 
+* Install all requirements of Whisper - https://github.com/openai/whisper
+* [yt-dlp](https://github.com/yt-dlp/yt-dlp) command line tool to download audio files of podcasts
+* Clone this Whisper [fork](https://github.com/sidhantls/whisper) into the root of the repository. It only contains a few line changes that save intermediate hidden states of the encoder. These hidden states will be use as features for speaker prediction. 
 
 
 ### Data 
 #### Audio Segments Dataset 
-* The required audio training dataset can be downloaded [here](https://drive.google.com/drive/folders/1LkR8oskSMNFo-YV-YOGGPucr-J0nEk9W?usp=share_link). Move the audio files in `speaker_prediction/data/audio_dataset/`
+* The required audio training dataset can be downloaded [here](https://drive.google.com/file/d/1SF0j1UmMxpwFNeY1wkj3R20pRB7L0a4t/view?usp=share_link). Move the audio files in `speaker_prediction/data/audio_dataset/`
 
 #### Create Audio Segments Dataset
 * Or create the dataset from scratch
