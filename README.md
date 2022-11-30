@@ -1,4 +1,4 @@
-# Lexcap Speaker Prediction
+# Lexpod Speaker Prediction
 Speaker prediction on Lex Fridman Podcast captions using OpenAI Whisper. This repository explores using the inner hidden states of the Whisper encoder to see if its useful for speaker prediction. This is motivated by Andrej Karpathy's [work](https://karpathy.ai/lexicap/) on using Whisper to transcribe Lex Fridman podcasts.
 
 Resources:  
