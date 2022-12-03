@@ -3,7 +3,8 @@ Speaker prediction on Lex Fridman Podcast captions using OpenAI Whisper. This re
 
 Resources:  
 * [Blog Post](https://sidhantls.github.io/lexpod-speaker-prediction)
-* [Colab](https://colab.research.google.com/drive/13U6OLMHUo3mo8RhKAvTcVEbroAsQsEx3?usp=sharing) for training the classifier
+* [Notebook](https://github.com/sidhantls/lexpod-speaker-prediction/blob/master/speaker_prediction/train_speaker_prediction.ipynb) to locally train and evaluate the classifier
+* [Colab](https://colab.research.google.com/drive/13U6OLMHUo3mo8RhKAvTcVEbroAsQsEx3?usp=sharing) to train and evaluate the classifier
 
 ![approach](approach.png)
 
