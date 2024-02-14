@@ -13,7 +13,7 @@ Resources:
 ### Requirements 
 * Install all requirements of Whisper - https://github.com/openai/whisper
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) command line tool to download audio files of podcasts
-* Clone this Whisper [fork](https://github.com/sidhantls/whisper) into the root of the repository. It only contains a few line changes that save intermediate hidden states of the encoder. These hidden states will be use as features for speaker prediction. 
+* Clone this Whisper [branch](https://github.com/sidhantls/whisper/tree/lexpod) into the root of the repository. It only contains a few line changes that save intermediate hidden states of the encoder. These hidden states will be use as features for speaker prediction. 
 
 
 ### Data 
